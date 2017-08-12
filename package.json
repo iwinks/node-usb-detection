@@ -6,7 +6,8 @@
   "gypfile": true,
   "scripts": {
     "test": "mocha --timeout 10000",
-    "postinstall": "node-gyp rebuild"
+    "postinstall": "node-gyp rebuild",
+    "prebuild-electron": "prebuild -t 1.4.10 -r electron",
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
     "chai": "^3.0.0",
     "chai-as-promised": "^5.1.0",
     "chalk": "^1.0.0",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "prebuild": "^6.2.1"
   }
 }
