@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha --timeout 10000",
     "install": "prebuild-install || node-gyp rebuild",
-    "prebuild-electron": "prebuild -t 1.4.10 -r electron"
+    "prebuild-electron": "prebuild --all -r electron"
   },
   "repository": {
     "type": "git",
